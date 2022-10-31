@@ -46,15 +46,16 @@ public class PracticecBot extends HummingbirdRobot {
             if (kanye.getSensorValue(1) > 50) {
                 // kanye.playClip(song);
                 Thread.sleep(500);
-                kanye.setServoPosition(1, 5);
+                kanye.setServoPosition(1, 87);
+                kanye.setServoPosition(2, 5);
                 kanye.setFullColorLED(1, 255, 0, 0);
                 kanye.setFullColorLED(2, 255, 0, 0);
-                kanye.setServoPosition(2, 175);
+
                 kanye.speak(word = sussy[(int) (Math.random() * 5)]);
                 System.out.println(word.toUpperCase());
                 Thread.sleep(2000);
                 kanye.setServoPosition(1, 175);
-                kanye.setServoPosition(2, 5);
+                kanye.setServoPosition(2, 87);
                 kanye.setFullColorLED(1, 0, 0, 0);
                 kanye.setFullColorLED(2, 0, 0, 0);
                 Thread.sleep(500);
